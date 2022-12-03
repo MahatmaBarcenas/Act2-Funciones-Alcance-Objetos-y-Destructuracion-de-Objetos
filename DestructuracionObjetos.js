@@ -30,37 +30,3 @@ function impimirNombreYEdad(persona){
 impimirNombreYEdad(Luis);
 impimirNombreYEdad(Dario);
 
-console.log("Parte nueva")
-
-var Armando = {
-	nombre: "Armando",
-	apellido: "Martinez",
-	edad: 22,
-	videojuego_favorito: "Jak and Daxter"
-}
-
-var Zaid = {
-	nombre: "Zaid",
-	apellido: "Barcenas",
-	edad: 17,
-	videojuego_favorito: "Fortnite"
-}
-function imprimirNombreEnMayusculas(persona) {
-	var nombre = persona.nombre;
-	console.log(nombre.toUpperCase());
-}
-
-
-function birthday(persona){
-	persona.edad = persona.edad + 1;
-}
-
-imprimirNombreEnMayusculas(Armando);
-imprimirNombreEnMayusculas(Zaid);
-
-function cumpleaños(persona){
-	return{
-	...persona,
-	edad: persona.edad + 1
-	}
-}
