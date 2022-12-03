@@ -209,51 +209,152 @@ Se cierra el objeto
 ```javascript 
 }
 ```
+Se declara una variable llamada Dario, cual tiene varios valores porque lo que es un objeto
+```javascript
 var Dario = {
+```
+Se defiende uno de lo valores del objeto, este se llama nombre y su valor es "Dario"
+```javascript
 	nombre: "Dario",
+	```
+Se defiende uno de lo valores del objeto, este se llama apellido y su valor es "Perez"
+```javascript
 	apellido: "Perez",
+	```j
+Se defiende uno de lo valores del objeto, este se llama edad y su valor es 25
+```javascript
 	edad: 25
+	```
+Se cierra el objeto	
+	```javascript
 }
-
+```
+Se declara la funcion imprimirNombreEnMayusculas1, tiene un parametro es cual persona
+```javascript
 function imprimirNombreEnMayuscula1(persona) {
+```
+Se define una variable llamada nombre, la cual extrae los variables nombres de objetos
+```javascript
 	var nombre = persona.nombre.toUpperCase();
+	```
+Se muestra un mensaje en consola el cual dira "LUIS" y/o "DARIO"	
+	```javascript
 	console.log(nombre);
+	```j
+Se cierra la funcion llamada imprimirNombreEnMayusculas1
+	```javascript
 }
-
+```
+Se ejecuta la funcion imprimirNombreEnMayusculas1 con el los valores del objeto Luis
+```javascript
 imprimirNombreEnMayuscula1(Luis);
+```
+Se ejecuta la funcion imprimirNombreEnMayusculas1 con el los valores del objeto Dario
+```javascript
 imprimirNombreEnMayuscula1(Dario)
+```
+Se ejecuta la funcion imprimirNombreEnMayusculas1 con el dato nombre del objeto indefindo
+```javascript
 imprimirNombreEnMayuscula1({nombre: "Pepito"})
+```
 
 ### DestructuracionObjetos.js
 
+Se declara una variable llamada luis, cual tiene varios valores porque lo que es un objeto 
+```javascript 
 var Luis = {
+```
+Se define uno de lo valores del objeto, este se llama nombre y su valor es "Luis"
+```javascript
 	nombre: "Luis",
+```
+Se defiende uno de los valores del objeto, este se llama apellido y su valor es "Martinez"
+```javascript 
 	apellido: "Martinez",
+```
+Se defiende uno de lo valores del objeto, este se llama edad y su valor es 17
+```javascript
 	edad: 17
+```
+Se cierra el objeto
+```javascript 
 }
-
+```
+Se declara una variable llamada Dario, cual tiene varios valores porque lo que es un objeto
+```javascript
 var Dario = {
+```
+Se defiende uno de lo valores del objeto, este se llama nombre y su valor es "Dario"
+```javascript
 	nombre: "Dario",
+	```
+Se defiende uno de lo valores del objeto, este se llama apellido y su valor es "Perez"
+```javascript
 	apellido: "Perez",
+	```j
+Se defiende uno de lo valores del objeto, este se llama edad y su valor es 25
+```javascript
 	edad: 25
+	```
+Se cierra el objeto	
+	```javascript
 }
+```
 
-function imprimirNombreEnMayusculas(persona) {
+Se declara la funcion imprimirNombreEnMayusculas, tiene un parametro es cual persona
+```javascript
+function imprimirNombreEnMayuscula(persona) {
+```
+Se extrae los datos nombre de las variables persona
+```javascript
 	var {nombre} = persona;
+	```
+Se muestra un mensaje en consola el cual dira "LUIS" y/o "DARIO"	
+```javascript
 	console.log(nombre.toUpperCase());
+	```
+Se cierra la funcion imprimirNombreEnMayusculas	
+```javascript
 }
-
-imprimirNombreEnMayusculas(Luis);
-imprimirNombreEnMayusculas(Dario);
-
+```
+Se ejecuta la funcion imprimirNombreEnMayusculas con el los valores del objeto Luis
+```javascript
+imprimirNombreEnMayuscula(Luis);
+```
+Se ejecuta la funcion imprimirNombreEnMayusculas con el los valores del objeto Dario
+```javascript
+imprimirNombreEnMayuscula(Dario)
+```
+Estos es un mensaje
+```javascript
 //Escribe una funcion que imprima el nombre y edad
+```
+Esto es un mesnsaje
+```javascript
 //Hola me llamo Luis Martinez y tengo 17 años <- Salida de ejemplo
-
+```
+Se declara la funcion impimirNombreYEdad con el parametro persona
+```javascript
 function impimirNombreYEdad(persona){
+```
+Se define una variables que extrae los datos nombre, apellido y edad de los objetos
+```javascript
 	var {nombre, apellido, edad} = persona
+	```
+Se muestra un mensaje en consola, el cual dira "Hola me llamo LUIS y tengo 17 años" y/o "Hola me llamo DARIO y tengo 25 años"	
+```javascript
 	console.log(`Hola me llamo ${nombre.toUpperCase()} y tengo ${edad} años`);
-
+	```
+Se cierra la funcion impimirNombreYEdad
+```javascript
 }
+```
 
+Se ejecuta la funcion impimirNombreYEdad con el los valores del objeto Luis
+```javascript
 impimirNombreYEdad(Luis);
-impimirNombreYEdad(Dario);
+```
+Se ejecuta la funcion impimirNombreYEdad con el los valores del objeto Dario
+```javascript
+impimirNombreYEdad(Dario)
+```
