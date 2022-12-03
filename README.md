@@ -136,39 +136,79 @@ Se declara una funcion llamada imprimirNombreEnMinusculas1
  ```javascript
 function imprimirNombreEnMinusculas1(n){
 ```
- ```javascript
+Se declara la variable n para después ser modificada haciendo que se escriba en minúscula
+```javascript
 	n = n.toLowerCase();
  ```
+Se muestra un mensaje el cual dirá "mahatma"
   ```javascript
 	console.log(n);
  ```
+Se cierra la función imprimirNombreEnMinusculas1(n)
   ```javascript
 }
 ```
+Se ejuctara la función imprimirNombreEnMinusculas1(n)
  ```javascript
 imprimirNombreEnMinusculas1(nombre);
 ```
 ### Objetos.js
+Se declara una variable de string, llamada nombreMaha, cuyo valor es "Mahatma"
+```javascript 
 var nombreMaha = "Mahatma";
+```
+Se declara una variable de string, llamada nombre Juan, cuyo valor es "Juan"
+```javascript
 var nombreJuan = "Juan";
-
-function imprimirNombreEnMayuscula(n) {
+```
+Se declara la función imprimirNombreEnMayuscula, tiene parámetros el cual es n
+```javascript 
+function imprimirNombreEnMayuscula(n)  {
+```
+Se declara la variable n para después ser modificada haciendo que se escriba en minúscula
+```javascript
 	n = n.toUpperCase();
+```
+Se muestra un mensaje el cual dirá "MAHATMA"
+```javascript
 	console.log(n);
+```
+Se cierra la función imprimirNombreEnMayuscula
+```javascript
 }
-
-
+```
+Se ejecuta la función imprimirNombreEnMayuscula pero con la variable nombrezMaha
+```javascript 
 imprimirNombreEnMayuscula(nombreMaha);
+```
+Se ejecuta la función imprimirNombreEnMayuscula pero con la variable nombrezJuan
+```javascript 
 imprimirNombreEnMayuscula(nombreJuan);
-
+```
+Esto es un comentario
+```javascript 
 //Objetos
-
+```
+Se declara una variable llamada luis, cual tiene varios valores porque lo que es un objeto 
+```javascript 
 var Luis = {
+```
+Se define uno de lo valores del objeto, este se llama nombre y su valor es "Luis"
+```javascript
 	nombre: "Luis",
+```
+Se defiende uno de los valores del objeto, este se llama apellido y su valor es "Martinez"
+```javascript 
 	apellido: "Martinez",
+```
+Se defiende uno de lo valores del objeto, este se llama edad y su valor es 17
+```javascript
 	edad: 17
+```
+Se cierra el objeto
+```javascript 
 }
-
+```
 var Dario = {
 	nombre: "Dario",
 	apellido: "Perez",
